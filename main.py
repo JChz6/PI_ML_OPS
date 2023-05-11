@@ -96,10 +96,12 @@ async def franquicia(franquicia:str):
 
 #************************ FUNCIÓN 4 ************************
 
-@app.get("/pelicula_pais/{pais}")
+@app.get("/peliculas_pais/{pais}")
 async def peliculas_pais(pais:str):
+    
     '''Ingresas el pais, retornando la cantidad de peliculas producidas en el mismo'''
-    respuesta = movies['production_countries'].str.contains(pais, na=False).sum()
+
+    respuesta = len(movies[movies['production_countries'].str.contains(pais, na=False)])
     
     return {'pais':pais, 'cantidad':respuesta}
 
