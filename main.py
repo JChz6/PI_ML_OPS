@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-#from pydantic import BaseModel
 import pandas as pd
 
 movies = pd.read_csv('movies_limpio.csv')
