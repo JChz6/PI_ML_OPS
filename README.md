@@ -42,7 +42,7 @@ main.py   ---- FUNCIONES:
 
 
 
-<h3> Consulta las funciones en ESTE LINK *****  https://pi-ml-ops-jchavez.onrender.com/docs
+# Consulta las funciones en ESTE LINK *****  https://pi-ml-ops-jchavez.onrender.com/docs
   
   
   
