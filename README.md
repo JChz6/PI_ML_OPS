@@ -8,7 +8,7 @@ El proyecto comienza con la recepción de los datos, los cuales requieren un AMP
 
 Empecemos:
 
-Guía de navegación:
+Guía de navegación de archivos:
  
  - README - (Usted está aquí) Guía de navegación e instrucciones
  - main.py - Archivo python que contiene las funciones que consume la API.
@@ -23,3 +23,32 @@ Guía de navegación:
  - ETL_ML.ipynb - Proceso de transformación, y limpieza de los datos (específicamente para elaborar el modelo de ML)
  - movies_ML.csv - Archivo resultante del proceso elaborado en ETL_ML.ipynb
  
+
+main.py   ---- FUNCIONES:
+
+1. peliculas_mes(mes): Se ingresa el mes y la función retorna la cantidad de películas que se estrenaron ese mes (nombre del mes, en str, ejemplo 'enero')
+
+2. peliculas_dia(dia): Se ingresa el día y la función retorna la cantidad de películas que se estrenaron ese dia de la semana (en str, ejemplo 'lunes') historicamente
+
+3. franquicia(franquicia): Se ingresa la franquicia, retornando la cantidad de películas, ganancia total y promedio
+
+4. peliculas_pais(pais): Ingresas el país, retornando la cantidad de películas producidas en el mismo
+
+5. productoras(productora): Ingresas la productora, retornando la ganancia total y la cantidad de películas que produjeron
+
+6. retorno(pelicula): Ingresas la pelicula, retornando la inversión, la ganancia, el retorno y el año en el que se lanzó
+
+
+
+  ***** Consulta las funciones en ESTE LINK *****  https://pi-ml-ops-jchavez.onrender.com/docs
+  
+  
+  
+Herramientas y librerías utilizadas:
+- Python
+- Pandas
+- Numpy
+- Scikit-learn
+- FastAPI
+- Uvicorn
+- Render
