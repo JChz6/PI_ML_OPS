@@ -1,7 +1,15 @@
 from fastapi import FastAPI
 import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 movies = pd.read_csv('movies_limpio.csv')
+df = pd.read_csv('Codigo ML/movies_ML_training.csv') #Este dataset servirá como entramiento del modelo
+
+#Machine Learning
+#Creo la matriz de características
+tfidf = TfidfVectorizer(stop_words='english')
+overview_matrix = tfidf.fit_transform(df['text'])
 
 app = FastAPI()
 
@@ -137,6 +145,14 @@ async def retorno(pelicula:str):
 
 #************************ ML ************************
 
-#def recomendacion('titulo'):
- #   '''Ingresas un nombre de pelicula y te recomienda las similares en una lista'''
-  #  return {'lista recomendada': respuesta}
+# función de recomendación basada en los datos concatenados en "text"
+@app.get("/recomendacion/{titulo}")
+def recomendacion(titulo):
+    idx = df[df['title']==titulo].index[0]
+    sim_scores = cosine_similarity(overview_matrix[idx], overview_matrix)
+    sim_scores = list(enumerate(sim_scores[0]))
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:6]
+    movie_indices = [i[0] for i in sim_scores]
+    respuesta = pd.DataFrame(df.iloc[movie_indices]['title'])
+    respuesta = list(respuesta['title'].values)
+    return {'lista recomendada': respuesta}
