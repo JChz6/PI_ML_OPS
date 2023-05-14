@@ -148,6 +148,8 @@ async def retorno(pelicula:str):
 # función de recomendación basada en los datos concatenados en "text"
 @app.get("/recomendacion/{titulo}")
 def recomendacion(titulo):
+    if titulo not in df['title'].values:
+        return {'ERROR': 'La película no existe'}
     idx = df[df['title']==titulo].index[0]
     sim_scores = cosine_similarity(overview_matrix[idx], overview_matrix)
     sim_scores = list(enumerate(sim_scores[0]))
