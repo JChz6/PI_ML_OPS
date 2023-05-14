@@ -1,5 +1,4 @@
 fastapi
 uvicorn
 pandas
-sklearn.feature_extraction.text
-sklearn.metrics.pairwise
+scikit-learn
