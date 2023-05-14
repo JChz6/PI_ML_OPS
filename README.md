@@ -41,9 +41,7 @@ main.py   ---- FUNCIONES:
 7. recomendacion('titulo'): Ingresas un nombre de pelicula y te recomienda las similares en una lista de 5 valores
 
 
-
-# Consulta las funciones en ESTE LINK ***** 
-#https://pi-ml-ops-jchavez.onrender.com/docs
+# Consulta las funciones en ESTE LINK -->  #https://pi-ml-ops-jchavez.onrender.com/docs
   
   
   
