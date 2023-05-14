@@ -17,7 +17,7 @@ Guía de navegación:
  - movies_dataset.csv - Archivo original con los datos sin procesar
  - movies_limpio.csv - Archivo resultante del proceso de ETL, con los datos listos para su consumo.
  - requirements.txt - Librerías necesarias para el funcionamiento de la API.
- CARPETA Codigo ML - Archivos con los que trabaja el modelo de ML para el sistema de recomendación:
+ - CARPETA Codigo ML - Archivos con los que trabaja el modelo de ML para el sistema de recomendación:
  - EDA.ipynb - Análisis exploratorio de los datos y primera demo del sistema de recomendación.
  - movies_ML_training.csv - Archivo que consumirá la API para las consultas al sistema de recomendación (creado en EDA.ipynb)
  - ETL_ML.ipynb - Proceso de transformación, y limpieza de los datos (específicamente para elaborar el modelo de ML)
