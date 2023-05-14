@@ -38,6 +38,8 @@ main.py   ---- FUNCIONES:
 
 6. retorno(pelicula): Ingresas la pelicula, retornando la inversión, la ganancia, el retorno y el año en el que se lanzó
 
+7. recomendacion('titulo'): Ingresas un nombre de pelicula y te recomienda las similares en una lista de 5 valores
+
 
 
   ***** Consulta las funciones en ESTE LINK *****  https://pi-ml-ops-jchavez.onrender.com/docs
