@@ -6,7 +6,7 @@ Soy un data scientist desarrollando un proyecto para una start-up proveedora de 
 
 El proyecto comienza con la recepción de los datos, los cuales requieren un AMPLIO trabajo de limpieza, transformación y desanidamiento.
 
-Empecemos:
+🧠 Empecemos:
 
 Guía de navegación de archivos:
  
