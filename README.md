@@ -1,4 +1,4 @@
-# Proyecto Individual N°1: PI_ML_OPS
+# Proyecto ML_OPS
 
 
 💡 Contexto:
